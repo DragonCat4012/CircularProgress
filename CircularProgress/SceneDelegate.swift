@@ -1,5 +1,5 @@
 //
-//  AppDelegate.swift
+//  SceneDelegate.swift
 //  CircularProgress
 //
 //  Created by Kiara on 07.11.21.
