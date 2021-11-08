@@ -29,6 +29,8 @@ class CircularProgressView: UIView {
     var Backgroundcolor: UIColor = UIColor.white
     ///0.0 - 1.0
     var progress: Double = 0.5
+    /// circle radius
+    var radius: Int = 60
     
     override init(frame: CGRect) {
           super.init(frame: frame)
@@ -39,7 +41,7 @@ class CircularProgressView: UIView {
       }
     
     private func createCircularPath() {
-        let circularPath = UIBezierPath(arcCenter: CGPoint(x: frame.size.width / 2.0, y: frame.size.height / 2.0), radius: 80, startAngle: startPoint, endAngle: endPoint, clockwise: true)
+        let circularPath = UIBezierPath(arcCenter: CGPoint(x: frame.size.width / 2, y: frame.size.height / 2), radius: CGFloat(self.radius), startAngle: startPoint, endAngle: endPoint, clockwise: true)
           
         // Create background layer
         backgroundLayer.path = circularPath.cgPath
