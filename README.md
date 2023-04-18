@@ -2,7 +2,7 @@
  
 ![example](https://media.discordapp.net/attachments/819922260424785920/906905473536626708/unknown.png?width=316&height=670)
 
-# Usage Example (View Controller)
+# Usage Example
 ```Swift
 import UIKit
 
